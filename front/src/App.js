@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Accueil from "./components/accueil";
+import Accueil from "./components/Accueil/accueil";
 
 /* import contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
