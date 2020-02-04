@@ -1,24 +1,29 @@
-.text-chapiteau{
-    font-size: 2rem;
+.text-chapiteau {
+  font-size: 2rem;
 }
-
 
 /* .div-img-chapiteau{
     margin:auto;
 } */
 
 .div-img-chapiteau {
-    position: relative;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0)), url("/chap.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 30vh;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0)
+    ),
+    url("/chap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
 }
-
+p {
+  font-family: "Molle", cursive;
+}
