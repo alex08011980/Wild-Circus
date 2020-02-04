@@ -11,7 +11,7 @@ class navbar extends Component {
             id="main-nav"
           >
             <div class="container">
-              <a href="index.html" class="navbar-brand">
+              <a href="/" class="navbar-brand">
                 Wild Circus
               </a>
               <button
@@ -24,17 +24,17 @@ class navbar extends Component {
               <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item mr-1"></li>
-                  <a href="#spectacle" class="nav-link text-white">
+                  <a href="./Spectacle" class="nav-link text-white">
                     Spectacle
                   </a>
                   <li class="nav-item mr-1">
-                    <a href="#reservation" class="nav-link text-white">
+                    <a href="/Reservation" class="nav-link text-white">
                       Réservation
                     </a>
                   </li>
 
                   <li class="nav-item mr-1">
-                    <a href="#contact" class="nav-link text-white">
+                    <a href="/Contact" class="nav-link text-white">
                       Contact
                     </a>
                   </li>
