@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../Navbar/navbar";
 
 import Footer from "../Footer/footer";
+import SectionReservation from "./section-reservation";
 
 
 
@@ -19,9 +20,14 @@ class Accueil extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        
-        <Footer />
+        <div className="sticky-wrap">
+          <Navbar />
+          <SectionReservation />
+        </div>
+
+        <div className="sticky-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

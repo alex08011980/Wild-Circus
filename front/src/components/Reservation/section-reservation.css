@@ -1,0 +1,56 @@
+
+.div-description-reservation{
+    width:100%;
+    padding: 1rem;
+}
+
+.img-reservation{
+    width:100%;
+}
+
+.div-img-reservation{
+    display:flex;
+    align-items: center;
+    width:20%;
+}
+
+.div-texte-reservation{
+    width:30%;
+}
+
+
+
+.div-tarif-reservation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+}
+
+.div-btn-reservation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.div-description-reservation{
+    display:flex; 
+}
+
+
+@media screen and (max-width:796px){
+    .div-description-reservation{
+        display:flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .div-texte-reservation{
+        width:100%;
+    }
+
+    .div-img-reservation{
+        width:100%;
+    }
+}
