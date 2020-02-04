@@ -19,9 +19,13 @@ class Accueil extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        
-        <Footer />
+        <div className="sticky-wrap">
+          <Navbar />
+        </div>
+
+        <div className="sticky-footer">
+          <Footer />
+        </div>
       </div>
     );
   }
