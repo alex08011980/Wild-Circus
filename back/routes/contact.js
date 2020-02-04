@@ -5,7 +5,7 @@ const parser = require("body-parser");
 
 router.use(parser.json());
 
-router.get("/", (req, res) => {
+router.get("/contact", (req, res) => {
   const sql = "SELECT * FROM contact";
   connection.query(sql, (error, results, fields) => {
     if (error) {
@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
   });
 });
 // GET ONE CONTACT
-router.get("/:id", (req, res) => {
+router.get("/contact/:id", (req, res) => {
   const idContactOne = parseInt(req.params.id);
   const sql = "SELECT * FROM contact WHERE id = ? ";
   connection.query(sql, idContactOne, (error, results, fields) => {
@@ -28,7 +28,7 @@ router.get("/:id", (req, res) => {
   });
 });
 //POST CONTACT
-router.post("/", (req, res) => {
+router.post("/contact", (req, res) => {
   const contact = req.body;
   const sql = `INSERT INTO contact (phone, email, address) VALUES ("${contact.phone}", "${contact.email}", "${contact.address}")`;
   connection.query(sql, (error, results, fields) => {
@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
   });
 });
 // PUT CONTACT
-router.put("/:id", (req, res) => {
+router.put("/contact/:id", (req, res) => {
   const idContact = req.params.id;
   const contact = req.body;
   connection.query(
@@ -57,7 +57,7 @@ router.put("/:id", (req, res) => {
   );
 });
 //DELETE CONTACT
-router.delete("/:id", (req, res) => {
+router.delete("/contact/:id", (req, res) => {
   const idContact = req.params.id;
   connection.query(
     "DELETE FROM contact WHERE id= ?",
