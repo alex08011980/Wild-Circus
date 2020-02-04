@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Navbar from "./navbar";
+import Navbar from "../Navbar/navbar";
 import Pageaccueil from "./pageaccueil";
-import Footer from "./footer";
+import Footer from "../Footer/footer";
 
 /* import contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
