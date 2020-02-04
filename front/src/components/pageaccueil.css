@@ -1,0 +1,8 @@
+.container_accueil {
+  background-image: url("/images/bckg_image/circus-828680_1920.jpg");
+  height: 1000px;
+}
+.text-accueil {
+  font-family: "Molle", cursive;
+  font-size: 30px;
+}
