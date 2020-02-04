@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
   });
 });
 // PUT CONTACT
-router.put("/:id", Auth, (req, res) => {
+router.put("/:id", (req, res) => {
   const idContact = req.params.id;
   const contact = req.body;
   connection.query(
@@ -57,7 +57,7 @@ router.put("/:id", Auth, (req, res) => {
   );
 });
 //DELETE CONTACT
-router.delete("/:id", Auth, (req, res) => {
+router.delete("/:id", (req, res) => {
   const idContact = req.params.id;
   connection.query(
     "DELETE FROM contact WHERE id= ?",

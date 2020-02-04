@@ -29,7 +29,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage }).single("file");
 
 // upload file path
-app.post("/api/uploadFile", [Auth], (req, res) => {
+app.post("/api/uploadFile", (req, res) => {
   upload(req, res, err => {
     if (err instanceof multer.MulterError) {
       return res.status(500).json(err);
@@ -42,7 +42,8 @@ app.post("/api/uploadFile", [Auth], (req, res) => {
   });
 });
 
-const server = app.listen(parseInt(SERVER_ADDRESS), () => {
-  console.log(`server is listening on port ${SERVER_ADDRESS}`);
+const server = app.listen(3001, () => {
+  console.log("server is listening on port 3001");
 });
+
 module.exports = server;
