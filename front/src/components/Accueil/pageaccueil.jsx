@@ -54,7 +54,7 @@ class pageaccueil extends Component {
               <div className="card m-3 ">
                 <div className="card-body  ">
                   <div className="text-center pb-2">
-                    <h3>Reservation</h3>
+                    <h3>Réservation</h3>
                   </div>
                   <div className=" text-center">
                     <img
