@@ -5,7 +5,7 @@ const parser = require("body-parser");
 
 router.use(parser.json());
 
-router.get("/", (req, res) => {
+router.get("/spectacle", (req, res) => {
   const sql = "SELECT * FROM spectacle";
   connection.query(sql, (error, results, fields) => {
     if (error) {
@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
   });
 });
 // GET ONE SPECTACLE
-router.get("/:id", (req, res) => {
+router.get("/spectacle/:id", (req, res) => {
   const idSpectacleOne = parseInt(req.params.id);
   const sql = "SELECT * FROM spectacle WHERE id = ? ";
   connection.query(sql, idSpectacleOne, (error, results, fields) => {
@@ -28,7 +28,7 @@ router.get("/:id", (req, res) => {
   });
 });
 //POST SPECTACLE
-router.post("/", (req, res) => {
+router.post("/spectacle", (req, res) => {
   const spectacle = req.body;
   const sql = `INSERT INTO spectacle (title, text) VALUES ("${spectacle.title}", "${spectacle.text}")`;
   connection.query(sql, (error, results, fields) => {
@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
   });
 });
 // PUT SPECTACLE
-router.put("/:id", (req, res) => {
+router.put("/spectacle/:id", (req, res) => {
   const idSpectacle = req.params.id;
   const spectacle = req.body;
   connection.query(
@@ -57,7 +57,7 @@ router.put("/:id", (req, res) => {
   );
 });
 //DELETE SPECTACLE
-router.delete("/:id", (req, res) => {
+router.delete("/spectacle/:id", (req, res) => {
   const idSpectacle = req.params.id;
   connection.query(
     "DELETE FROM spectacle WHERE id= ?",

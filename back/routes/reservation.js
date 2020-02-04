@@ -5,7 +5,7 @@ const parser = require("body-parser");
 
 router.use(parser.json());
 
-router.get("/", (req, res) => {
+router.get("/reservation", (req, res) => {
   const sql = "SELECT * FROM reservation";
   connection.query(sql, (error, results, fields) => {
     if (error) {
@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
   });
 });
 // GET ONE RESERVATION
-router.get("/:id", (req, res) => {
+router.get("/reservation/:id", (req, res) => {
   const idReservationtOne = parseInt(req.params.id);
   const sql = "SELECT * FROM reservation WHERE id = ? ";
   connection.query(sql, idRservationOne, (error, results, fields) => {
@@ -28,7 +28,7 @@ router.get("/:id", (req, res) => {
   });
 });
 //POST RESERVATIOn
-router.post("/", (req, res) => {
+router.post("/reservation", (req, res) => {
   const reservation = req.body;
   const sql = `INSERT INTO reservation (title, text, price) VALUES ("${reservation.title}", "${reservation.text}", "${reservation.price}")`;
   connection.query(sql, (error, results, fields) => {
@@ -41,7 +41,7 @@ router.post("/", (req, res) => {
   });
 });
 // PUT RESERVATION
-router.put("/:id", (req, res) => {
+router.put("/reservation/:id", (req, res) => {
   const idReservation = req.params.id;
   const reservation = req.body;
   connection.query(
@@ -57,7 +57,7 @@ router.put("/:id", (req, res) => {
   );
 });
 //DELETE RESERVATION
-router.delete("/:id", (req, res) => {
+router.delete("/reservation/:id", (req, res) => {
   const idReservation = req.params.id;
   connection.query(
     "DELETE FROM reservation WHERE id= ?",
