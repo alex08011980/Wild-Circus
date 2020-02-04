@@ -10,11 +10,11 @@ class Spectacle extends Component {
           <div class="block col-xs-6">
             <div class="card">
               <img
-                class="card-img img-responsive"
+                class="card-img img-responsive mt-5"
                 src="/images/acrobate_fille.jpg"
                 alt="Card image"
               ></img>
-              <div class="card-img-overlay">
+              <div class="card-img-overlay pt-5">
                 <h1 class="card-title text-white">Duo Torres</h1>
               </div>
               <div className="card-text">
