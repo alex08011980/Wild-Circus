@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "../Navbar/navbar";
-
+import Seccontact from "../Contact/sectioncontact"
 import Footer from "../Footer/footer";
 
 
 
-class Accueil extends Component {
+class contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,11 +20,11 @@ class Accueil extends Component {
     return (
       <div>
         <Navbar />
-        
+        <Seccontact/>
         <Footer />
       </div>
     );
   }
 }
 
-export default Accueil;
+export default contact;
