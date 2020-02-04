@@ -15,5 +15,13 @@
 }
 
 .sticky-footer {
-  margin-top: auto
+  margin-top: auto;
+}
+
+.img-accueil{
+  width: 50%;
+}
+
+.div-card-accueil{
+  width: 50%;
 }
