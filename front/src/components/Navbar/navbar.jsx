@@ -43,9 +43,7 @@ class navbar extends Component {
             </div>
           </nav>
         </div>
-        <div class="bodytext">
-          <p>Bienvenue dans l'univers magique du cirque</p>
-        </div>
+        
       </div>
     );
   }
