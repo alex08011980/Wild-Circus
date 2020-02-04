@@ -5,7 +5,7 @@ class SectionChapiteau extends Component{
     render(){
         return(
             <div className="d-flex flex-column div-chapiteau">
-                <p className="text-chapiteau text-center p-3">Des spectacles à vous couper le soufle !</p>
+                <p className="text-chapiteau text-center p-3">Des spectacles à vous couper le souffle !</p>
                 <div className="div-img-chapiteau">
                 </div>
             </div>

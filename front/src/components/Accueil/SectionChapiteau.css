@@ -12,7 +12,7 @@
     display: flex;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient( rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0)), url("/chap.png");
+    background-image: linear-gradient( rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0)), url("/images/tickets.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
