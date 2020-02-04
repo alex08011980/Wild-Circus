@@ -1,19 +1,9 @@
 import React, { Component } from "react";
 import Accueil from "./components/Accueil/accueil";
-
-/* import contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-
-import Pageaccueil from "./components/pageaccueil/Pageaccueil";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect
-} from "react-router-dom";
-
-import Reservation from "./components/reservation/Reservation";
-import Spectacle from "./components/spectacle/Spectacle"; */
+import { Switch, Route } from 'react-router-dom';
+import Spectacle from './components/Spectacle/Spectacle';
+import Reservation from "./components/Reservation/Reservation";
+import Contact from "./components/Contact/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -29,7 +19,12 @@ class App extends Component {
   render() {
     return (
       <div id="App">
-        <Accueil />
+        <Switch>
+          <Route exact path="/" component={Accueil} />
+          <Route exact path="/Spectacle" component={Spectacle} />
+          <Route exact path="/Reservation" component={Reservation} />
+          <Route exact path="/Contact" component={Contact} />
+        </Switch>
       </div>
     );
   }
