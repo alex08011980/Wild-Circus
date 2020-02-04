@@ -3,7 +3,7 @@ const router = express.Router({ mergeParams: true });
 const connection = require("../config");
 
 // GET IMAGE
-router.get("/", (req, res) => {
+router.get("/image", (req, res) => {
   const sql = "SELECT * FROM image";
   connection.query(sql, (error, results, fields) => {
     if (error) {
@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
 });
 
 // GET ONE IMAGE
-router.get("/:id", (req, res) => {
+router.get("/image/:id", (req, res) => {
   const idImage = parseInt(req.params.id);
   const sql = "SELECT * FROM image WHERE id = ? ";
   connection.query(sql, idImage, (error, results, fields) => {
@@ -28,7 +28,7 @@ router.get("/:id", (req, res) => {
 });
 
 //POST IMAGE
-router.post("/", (req, res) => {
+router.post("/image", (req, res) => {
   const image = req.body;
   const sql = "INSERT INTO image (name, source) VALUES (?, ?)";
   connection.query(
@@ -46,7 +46,7 @@ router.post("/", (req, res) => {
 });
 
 // PUT IMAGE
-router.put("/:id", (req, res) => {
+router.put("/image/:id", (req, res) => {
   const idImage = req.params.id;
   const image = req.body;
   connection.query(
@@ -63,7 +63,7 @@ router.put("/:id", (req, res) => {
 });
 
 //DELETE IMAGE
-router.delete("/:id", (req, res) => {
+router.delete("/image/:id", (req, res) => {
   const idImage = req.params.id;
 
   connection.query(

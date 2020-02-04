@@ -13,64 +13,84 @@ class pageaccueil extends Component {
             <div className="card m-3 ">
               <div className="card-body d-flex ">
                 <div className="div-card-accueil pt-5 decoration-accueil">
-                  <p className="card-title">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                  <p className="card-title_accueil">
+                    Vous serez accueillis sous les célèbres rayures rouges et
+                    blanches d'un tout nouveau chapiteau rond ultra chaleureux
+                    au confort total de 1100 sièges. La décoration style baroque
+                    et les éclairages à profusion ont de quoi faire pâlir les
+                    salles les plus prestigieuses.
+                  </p>
                 </div>
                 <div className="div-card-accueil text-center">
-                  <img className="img-accueil" src="./demon.jpg" alt="test" />
+                  <img
+                    className="img-accueil"
+                    src="images/femme_rose.jpg"
+                    alt="test"
+                  />
                 </div>
               </div>
             </div>
 
-
             <div className="d-flex pt-5">
               <div className="card m-3 ">
                 <div className="card-body  ">
-                <div className="text-center pb-2">
+                  <div className="text-center pb-2">
                     <h3>Spectacle</h3>
                   </div>
                   <div className=" text-center">
-                    <img className="img-accueil" src="./demon.jpg" alt="test" />
+                    <img
+                      className="img-accueil"
+                      src="images/acrobate_fille.jpg"
+                      alt="test"
+                    />
                   </div>
                   <div className=" pt-5 decoration-accueil text-center">
-                    <button><a href="Spectacle">En savoir plus</a></button>
+                    <button type="button" class="btn btn-danger">
+                      <a href="Spectacle">En savoir plus</a>
+                    </button>
                   </div>
-
                 </div>
-
               </div>
               <div className="card m-3 ">
                 <div className="card-body  ">
                   <div className="text-center pb-2">
-                    <h3>Reservation</h3>
+                    <h3>Réservation</h3>
                   </div>
                   <div className=" text-center">
-                    <img className="img-accueil" src="./demon.jpg" alt="test" />
+                    <img
+                      className="img-accueil"
+                      src="images/tickets.jpg"
+                      alt="test"
+                    />
                   </div>
                   <div className=" pt-5 decoration-accueil text-center">
-                    <button><a href="Reservation">En savoir plus</a></button>
+                    <button type="button" class="btn btn-danger">
+                      <a href="Reservation">En savoir plus</a>
+                    </button>
                   </div>
-
                 </div>
-
               </div>
               <div className="card m-3 ">
                 <div className="card-body  ">
-                <div className="text-center pb-2">
+                  <div className="text-center pb-2">
                     <h3>Contact</h3>
                   </div>
                   <div className=" text-center">
-                    <img className="img-accueil" src="./demon.jpg" alt="test" />
+                    <img
+                      className="img-accueil"
+                      src="images/cheval.jpg"
+                      alt="test"
+                    />
                   </div>
                   <div className=" pt-5 decoration-accueil text-center">
-                    <button className=" " ><a  href="Contact">En savoir plus</a></button>
+                    <button type="button" class="btn btn-danger">
+                      <a href="Contact">En savoir plus</a>
+                    </button>
                   </div>
-
                 </div>
-
               </div>
-              </div>
+            </div>
           </div>
-
         </div>
       </div>
     );

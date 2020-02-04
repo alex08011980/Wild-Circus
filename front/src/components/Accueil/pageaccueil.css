@@ -1,5 +1,4 @@
 .container_accueil {
-
   background-image: url("/images/bckg_image/circus-828680_1920.jpg");
   height: 1000px;
 }
@@ -7,6 +6,7 @@
   font-family: "Molle", cursive;
   font-size: 30px;
 }
+
 
 .sticky-wrap {
   display: flex;
@@ -18,10 +18,25 @@
   margin-top: auto;
 }
 
-.img-accueil{
+
+
+.img-accueil {
+
   width: 50%;
 }
 
-.div-card-accueil{
+.div-card-accueil {
   width: 50%;
+}
+a {
+  color: white;
+}
+h3 {
+  font-family: "Molle", cursive;
+}
+.card-title_accueil {
+  font-size: 20px;
+  margin-left: 50px;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
