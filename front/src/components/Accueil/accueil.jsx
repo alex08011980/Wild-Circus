@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "../Navbar/navbar";
 import Pageaccueil from "./pageaccueil";
 import Footer from "../Footer/footer";
+import SectionChapiteau from './SectionChapiteau';
 
 /* import contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -33,6 +34,7 @@ class Accueil extends Component {
       <div>
         <Navbar />
         <Pageaccueil />
+        <SectionChapiteau />
         <Footer />
       </div>
     );
