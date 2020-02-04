@@ -28,7 +28,7 @@ router.get("/:id", (req, res) => {
 });
 
 //POST IMAGE
-router.post("/", Auth, (req, res) => {
+router.post("/", (req, res) => {
   const image = req.body;
   const sql = "INSERT INTO image (name, source) VALUES (?, ?)";
   connection.query(
@@ -46,7 +46,7 @@ router.post("/", Auth, (req, res) => {
 });
 
 // PUT IMAGE
-router.put("/:id", Auth, (req, res) => {
+router.put("/:id", (req, res) => {
   const idImage = req.params.id;
   const image = req.body;
   connection.query(
@@ -63,7 +63,7 @@ router.put("/:id", Auth, (req, res) => {
 });
 
 //DELETE IMAGE
-router.delete("/:id", Auth, (req, res) => {
+router.delete("/:id", (req, res) => {
   const idImage = req.params.id;
 
   connection.query(

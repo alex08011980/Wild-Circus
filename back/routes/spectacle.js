@@ -28,7 +28,7 @@ router.get("/:id", (req, res) => {
   });
 });
 //POST SPECTACLE
-router.post("/", Auth, (req, res) => {
+router.post("/", (req, res) => {
   const spectacle = req.body;
   const sql = `INSERT INTO spectacle (title, text) VALUES ("${spectacle.title}", "${spectacle.text}")`;
   connection.query(sql, (error, results, fields) => {
