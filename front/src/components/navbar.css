@@ -1,0 +1,19 @@
+.bodytext {
+  color: red;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Molle", cursive;
+}
+.nav-item {
+  font-family: "Molle", cursive;
+  font-size: 40px;
+}
+.navbar-nav {
+  font-family: "Molle", cursive;
+  font-size: 40px;
+}
+.navbar-brand {
+  font-family: "Molle", cursive;
+  font-size: 40px;
+}
